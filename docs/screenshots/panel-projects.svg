@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap');
+      text { font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif; }
+    </style>
+    <clipPath id="roundClip">
+      <rect width="800" height="500" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- Main background -->
+  <rect width="800" height="500" rx="8" fill="#1e1e1e"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="800" height="36" rx="8" fill="#252526"/>
+  <rect x="0" y="20" width="800" height="16" fill="#252526"/>
+  <text x="16" y="23" fill="#cccccc" font-size="13" font-weight="600">&#x1F4CB; GitHub Projects</text>
+
+  <!-- Tab bar background -->
+  <rect x="0" y="36" width="800" height="34" fill="#2d2d2d"/>
+
+  <!-- Active tab: Q2 Roadmap -->
+  <rect x="8" y="42" width="160" height="24" rx="4" fill="#264f78"/>
+  <text x="16" y="58" fill="#cccccc" font-size="11">
+    <tspan fill="#888">!q2-roadmap</tspan>
+    <tspan fill="#ffffff" font-weight="500"> Q2 Roadmap</tspan>
+  </text>
+
+  <!-- Inactive tab: Auth Migration -->
+  <rect x="176" y="42" width="180" height="24" rx="4" fill="#3c3c3c"/>
+  <text x="184" y="58" fill="#888" font-size="11">
+    <tspan>!auth-migration</tspan>
+    <tspan fill="#aaaaaa"> Auth Migration</tspan>
+  </text>
+
+  <!-- Project info card -->
+  <rect x="8" y="78" width="784" height="36" rx="6" fill="#252526"/>
+  <text x="16" y="99" fill="#cccccc" font-size="12">
+    <tspan font-weight="600" fill="#e0e0e0">Q2 Roadmap</tspan>
+    <tspan fill="#666"> &#xB7; </tspan>
+    <tspan fill="#888" font-size="11">!q2-roadmap</tspan>
+    <tspan fill="#666"> &#xB7; </tspan>
+    <tspan fill="#999" font-size="11">Q2 2026 product milestones</tspan>
+  </text>
+  <!-- 8 items badge -->
+  <rect x="718" y="86" width="60" height="20" rx="10" fill="#3c3c3c"/>
+  <text x="748" y="100" fill="#aaa" font-size="10" text-anchor="middle" font-weight="500">8 items</text>
+
+  <!-- ============ KANBAN COLUMNS ============ -->
+  <!-- Column widths: each ~188px with 8px gaps, starting at x=8 -->
+
+  <!-- ===== BACKLOG COLUMN ===== -->
+  <rect x="8" y="122" width="188" height="370" rx="6" fill="#252526"/>
+  <!-- Column header -->
+  <rect x="8" y="122" width="188" height="28" rx="6" fill="#252526"/>
+  <rect x="8" y="136" width="188" height="14" fill="#252526"/>
+  <circle cx="20" cy="136" r="4" fill="#666"/>
+  <text x="28" y="140" fill="#999" font-size="11" font-weight="600" letter-spacing="0.5">BACKLOG</text>
+  <text x="82" y="140" fill="#666" font-size="10">2</text>
+
+  <!-- Card 1: WebSocket support -->
+  <rect x="14" y="156" width="176" height="88" rx="5" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="22" y="174" fill="#cccccc" font-size="11" font-weight="500">WebSocket support for</text>
+  <text x="22" y="188" fill="#cccccc" font-size="11" font-weight="500">live Chat sync</text>
+  <!-- enhancement badge -->
+  <rect x="22" y="194" width="80" height="16" rx="3" fill="#1a3a5c"/>
+  <text x="62" y="205" fill="#58a6ff" font-size="9" text-anchor="middle" font-weight="500">enhancement</text>
+  <!-- assignee + repo -->
+  <text x="22" y="230" fill="#888" font-size="10">
+    <tspan fill="#4285f4">@dmytro</tspan>
+    <tspan fill="#555"> &#xB7; </tspan>
+    <tspan fill="#4285f4">$kasper-api</tspan>
+  </text>
+
+  <!-- Card 2: Calendar widget -->
+  <rect x="14" y="252" width="176" height="88" rx="5" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="22" y="270" fill="#cccccc" font-size="11" font-weight="500">Calendar widget</text>
+  <text x="22" y="284" fill="#cccccc" font-size="11" font-weight="500">mini-view</text>
+  <!-- feature badge -->
+  <rect x="22" y="290" width="52" height="16" rx="3" fill="#1a3c1a"/>
+  <text x="48" y="301" fill="#3fb950" font-size="9" text-anchor="middle" font-weight="500">feature</text>
+  <!-- assignee + repo -->
+  <text x="22" y="326" fill="#888" font-size="10">
+    <tspan fill="#4285f4">@olena</tspan>
+    <tspan fill="#555"> &#xB7; </tspan>
+    <tspan fill="#4285f4">$kasper-ui</tspan>
+  </text>
+
+
+  <!-- ===== IN PROGRESS COLUMN ===== -->
+  <rect x="204" y="122" width="196" height="370" rx="6" fill="#252526"/>
+  <!-- Column header -->
+  <rect x="204" y="122" width="196" height="28" rx="6" fill="#252526"/>
+  <rect x="204" y="136" width="196" height="14" fill="#252526"/>
+  <circle cx="216" cy="136" r="4" fill="#58a6ff"/>
+  <text x="224" y="140" fill="#58a6ff" font-size="11" font-weight="600" letter-spacing="0.5">IN PROGRESS</text>
+  <text x="304" y="140" fill="#666" font-size="10">3</text>
+
+  <!-- Card 1: Auth middleware refactor -->
+  <rect x="210" y="156" width="184" height="100" rx="5" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="218" y="174" fill="#cccccc" font-size="11" font-weight="500">Auth middleware</text>
+  <text x="218" y="188" fill="#cccccc" font-size="11" font-weight="500">refactor</text>
+  <!-- security badge -->
+  <rect x="218" y="194" width="56" height="16" rx="3" fill="#3d3520"/>
+  <text x="246" y="205" fill="#d29922" font-size="9" text-anchor="middle" font-weight="500">security</text>
+  <!-- priority:high badge -->
+  <rect x="280" y="194" width="72" height="16" rx="3" fill="#3c1a1a"/>
+  <text x="316" y="205" fill="#f85149" font-size="9" text-anchor="middle" font-weight="500">priority:high</text>
+  <!-- assignees + repo + issue -->
+  <text x="218" y="230" fill="#888" font-size="10">
+    <tspan fill="#4285f4">@anna</tspan>
+    <tspan fill="#555"> </tspan>
+    <tspan fill="#4285f4">@maxim</tspan>
+  </text>
+  <text x="218" y="244" fill="#888" font-size="10">
+    <tspan fill="#4285f4">$kasper-api</tspan>
+    <tspan fill="#555"> </tspan>
+    <tspan fill="#888">#42</tspan>
+  </text>
+
+  <!-- Card 2: Sidebar navigation redesign -->
+  <rect x="210" y="264" width="184" height="92" rx="5" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="218" y="282" fill="#cccccc" font-size="11" font-weight="500">Sidebar navigation</text>
+  <text x="218" y="296" fill="#cccccc" font-size="11" font-weight="500">redesign</text>
+  <!-- design badge -->
+  <rect x="218" y="302" width="50" height="16" rx="3" fill="#1a2e3c"/>
+  <text x="243" y="313" fill="#79c0ff" font-size="9" text-anchor="middle" font-weight="500">design</text>
+  <!-- assignees + repo -->
+  <text x="218" y="340" fill="#888" font-size="10">
+    <tspan fill="#4285f4">@olena</tspan>
+    <tspan fill="#555"> </tspan>
+    <tspan fill="#4285f4">@iryna</tspan>
+    <tspan fill="#555"> &#xB7; </tspan>
+    <tspan fill="#4285f4">$kasper-ui</tspan>
+  </text>
+
+  <!-- Card 3: GitHub Projects integration -->
+  <rect x="210" y="364" width="184" height="88" rx="5" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="218" y="382" fill="#cccccc" font-size="11" font-weight="500">GitHub Projects</text>
+  <text x="218" y="396" fill="#cccccc" font-size="11" font-weight="500">integration</text>
+  <!-- feature badge -->
+  <rect x="218" y="402" width="52" height="16" rx="3" fill="#1a3c1a"/>
+  <text x="244" y="413" fill="#3fb950" font-size="9" text-anchor="middle" font-weight="500">feature</text>
+  <!-- assignee + repo -->
+  <text x="218" y="438" fill="#888" font-size="10">
+    <tspan fill="#4285f4">@dmytro</tspan>
+    <tspan fill="#555"> &#xB7; </tspan>
+    <tspan fill="#4285f4">$kasper</tspan>
+  </text>
+
+
+  <!-- ===== REVIEW COLUMN ===== -->
+  <rect x="408" y="122" width="188" height="370" rx="6" fill="#252526"/>
+  <!-- Column header -->
+  <rect x="408" y="122" width="188" height="28" rx="6" fill="#252526"/>
+  <rect x="408" y="136" width="188" height="14" fill="#252526"/>
+  <circle cx="420" cy="136" r="4" fill="#d29922"/>
+  <text x="428" y="140" fill="#d29922" font-size="11" font-weight="600" letter-spacing="0.5">REVIEW</text>
+  <text x="478" y="140" fill="#666" font-size="10">1</text>
+
+  <!-- Card 1: CI pipeline optimization -->
+  <rect x="414" y="156" width="176" height="88" rx="5" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="422" y="174" fill="#cccccc" font-size="11" font-weight="500">CI pipeline</text>
+  <text x="422" y="188" fill="#cccccc" font-size="11" font-weight="500">optimization</text>
+  <!-- devops badge -->
+  <rect x="422" y="194" width="48" height="16" rx="3" fill="#3d3520"/>
+  <text x="446" y="205" fill="#d29922" font-size="9" text-anchor="middle" font-weight="500">devops</text>
+  <!-- assignee + repo -->
+  <text x="422" y="230" fill="#888" font-size="10">
+    <tspan fill="#4285f4">@sergiy</tspan>
+    <tspan fill="#555"> &#xB7; </tspan>
+    <tspan fill="#4285f4">$kasper-infra</tspan>
+  </text>
+
+
+  <!-- ===== DONE COLUMN ===== -->
+  <rect x="604" y="122" width="188" height="370" rx="6" fill="#252526"/>
+  <!-- Column header -->
+  <rect x="604" y="122" width="188" height="28" rx="6" fill="#252526"/>
+  <rect x="604" y="136" width="188" height="14" fill="#252526"/>
+  <circle cx="616" cy="136" r="4" fill="#3fb950"/>
+  <text x="624" y="140" fill="#3fb950" font-size="11" font-weight="600" letter-spacing="0.5">DONE</text>
+  <text x="660" y="140" fill="#666" font-size="10">2</text>
+
+  <!-- Card 1: Google Chat basic integration -->
+  <rect x="610" y="156" width="176" height="88" rx="5" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="618" y="174" fill="#999" font-size="11" font-weight="500">Google Chat basic</text>
+  <text x="618" y="188" fill="#999" font-size="11" font-weight="500">integration</text>
+  <!-- feature badge -->
+  <rect x="618" y="194" width="52" height="16" rx="3" fill="#1a3c1a"/>
+  <text x="644" y="205" fill="#3fb950" font-size="9" text-anchor="middle" font-weight="500">feature</text>
+  <!-- assignees + repo -->
+  <text x="618" y="230" fill="#888" font-size="10">
+    <tspan fill="#4285f4">@anna</tspan>
+    <tspan fill="#555"> </tspan>
+    <tspan fill="#4285f4">@dmytro</tspan>
+    <tspan fill="#555"> &#xB7; </tspan>
+    <tspan fill="#4285f4">$kasper</tspan>
+  </text>
+
+  <!-- Card 2: Alias system v1 -->
+  <rect x="610" y="252" width="176" height="88" rx="5" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="618" y="270" fill="#999" font-size="11" font-weight="500">Alias system v1</text>
+  <!-- core badge -->
+  <rect x="618" y="280" width="38" height="16" rx="3" fill="#2a1a3c"/>
+  <text x="637" y="291" fill="#bc8cff" font-size="9" text-anchor="middle" font-weight="500">core</text>
+  <!-- assignee + repo -->
+  <text x="618" y="320" fill="#888" font-size="10">
+    <tspan fill="#4285f4">@anna</tspan>
+    <tspan fill="#555"> &#xB7; </tspan>
+    <tspan fill="#4285f4">$kasper</tspan>
+  </text>
+
+  <!-- Subtle border around entire panel -->
+  <rect width="800" height="500" rx="8" fill="none" stroke="#333" stroke-width="1"/>
+</svg>

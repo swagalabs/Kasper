@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="600" viewBox="0 0 350 600">
+  <defs>
+    <style>
+      .bg { fill: #252526; }
+      .panel-bg { fill: #1e1e1e; }
+      .text { fill: #cccccc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+      .muted { fill: #888888; }
+      .accent { fill: #4285f4; }
+      .card-bg { fill: #2d2d2d; }
+      .input-bg { fill: #3c3c3c; }
+      .separator { stroke: #3c3c3c; stroke-width: 1; }
+      .badge { fill: #4285f4; }
+      .badge-text { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 9px; font-weight: 600; }
+      .avatar-bg { fill: #4285f4; }
+      .avatar-text { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 10px; font-weight: 600; }
+      .highlight { fill: #4285f4; }
+      .btn-bg { fill: #4285f4; }
+      .btn-text { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="350" height="600" class="bg"/>
+  <rect x="0" y="0" width="350" height="600" class="panel-bg" rx="0"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="350" height="40" fill="#252526"/>
+  <text x="16" y="26" class="text" font-size="13" font-weight="600">&#x1F4AC; Google Chat</text>
+
+  <!-- Search box -->
+  <rect x="12" y="48" width="326" height="28" rx="4" class="input-bg"/>
+  <text x="24" y="66" class="muted" font-size="11">Search chats...</text>
+
+  <!-- SPACES section header -->
+  <text x="16" y="102" class="muted" font-size="10" font-weight="600" letter-spacing="0.5">SPACES</text>
+
+  <!-- Space card: #backend -->
+  <rect x="12" y="110" width="326" height="36" rx="4" class="card-bg"/>
+  <text x="20" y="126" class="text" font-size="11" font-weight="600">#backend</text>
+  <text x="20" y="140" class="muted" font-size="10">Backend Team &#xb7; 8 members</text>
+  <!-- new badge -->
+  <rect x="302" y="119" width="28" height="14" rx="7" class="badge"/>
+  <text x="308" y="129" class="badge-text">new</text>
+
+  <!-- Space card: #frontend -->
+  <rect x="12" y="150" width="326" height="36" rx="4" class="card-bg"/>
+  <text x="20" y="166" class="text" font-size="11" font-weight="600">#frontend</text>
+  <text x="20" y="180" class="muted" font-size="10">Frontend Squad · 6 members</text>
+
+  <!-- Space card: #devops -->
+  <rect x="12" y="190" width="326" height="36" rx="4" class="card-bg"/>
+  <text x="20" y="206" class="text" font-size="11" font-weight="600">#devops</text>
+  <text x="20" y="220" class="muted" font-size="10">DevOps &amp; Infra · 4 members</text>
+
+  <!-- Space card: #general -->
+  <rect x="12" y="230" width="326" height="36" rx="4" class="card-bg"/>
+  <text x="20" y="246" class="text" font-size="11" font-weight="600">#general</text>
+  <text x="20" y="260" class="muted" font-size="10">General · 15 members</text>
+  <!-- new badge -->
+  <rect x="302" y="239" width="28" height="14" rx="7" class="badge"/>
+  <text x="308" y="249" class="badge-text">new</text>
+
+  <!-- Space card: @anna DM -->
+  <rect x="12" y="270" width="326" height="36" rx="4" class="card-bg"/>
+  <text x="20" y="286" class="text" font-size="11" font-weight="600">@anna</text>
+  <text x="20" y="300" class="muted" font-size="10">DM</text>
+
+  <!-- Separator -->
+  <line x1="12" y1="320" x2="338" y2="320" class="separator"/>
+
+  <!-- #backend section header -->
+  <text x="16" y="342" class="text" font-size="12" font-weight="600">#backend</text>
+
+  <!-- Message 1: Anna -->
+  <g transform="translate(12, 354)">
+    <!-- Avatar -->
+    <circle cx="16" cy="16" r="14" class="avatar-bg"/>
+    <text x="16" y="20" class="avatar-text" text-anchor="middle">&#x0410;&#x041A;</text>
+    <!-- Name and time -->
+    <text x="36" y="12" class="text" font-size="11" font-weight="600">@anna</text>
+    <text x="72" y="12" class="muted" font-size="10"> · 09:15</text>
+    <!-- Message text -->
+    <text x="36" y="28" class="text" font-size="11">
+      <tspan>&#x0417;&#x0430;&#x043F;&#x0443;&#x0448;&#x0438;&#x043B;&#x0430; &#x0444;&#x0456;&#x043A;&#x0441; &#x0434;&#x043B;&#x044F; auth middleware,</tspan>
+    </text>
+    <text x="36" y="42" class="text" font-size="11">
+      <tspan>&#x043F;&#x043E;&#x0434;&#x0438;&#x0432;&#x0456;&#x0442;&#x044C;&#x0441;&#x044F; </tspan><tspan class="highlight">$kasper-api</tspan><tspan> PR #42</tspan>
+    </text>
+  </g>
+
+  <!-- Message 2: Dmytro -->
+  <g transform="translate(12, 414)">
+    <!-- Avatar -->
+    <circle cx="16" cy="16" r="14" fill="#5c6bc0"/>
+    <text x="16" y="20" class="avatar-text" text-anchor="middle">&#x0414;&#x0428;</text>
+    <!-- Name and time -->
+    <text x="36" y="12" class="text" font-size="11" font-weight="600">@dmytro</text>
+    <text x="82" y="12" class="muted" font-size="10"> · 09:17</text>
+    <!-- Message text -->
+    <text x="36" y="28" class="text" font-size="11">
+      <tspan>&#x0414;&#x043E;&#x0431;&#x0440;&#x0435;, &#x043F;&#x043E;&#x0434;&#x0438;&#x0432;&#x043B;&#x044E;&#x0441;&#x044C;. </tspan><tspan class="highlight">@maxim</tspan><tspan> &#x043C;&#x043E;&#x0436;&#x0435;&#x0448;</tspan>
+    </text>
+    <text x="36" y="42" class="text" font-size="11">
+      <tspan>&#x0442;&#x0435;&#x0436; &#x0433;&#x043B;&#x044F;&#x043D;&#x0443;&#x0442;&#x0438;?</tspan>
+    </text>
+  </g>
+
+  <!-- Message 3: Maxim -->
+  <g transform="translate(12, 474)">
+    <!-- Avatar -->
+    <circle cx="16" cy="16" r="14" fill="#66bb6a"/>
+    <text x="16" y="20" class="avatar-text" text-anchor="middle">&#x041C;&#x0411;</text>
+    <!-- Name and time -->
+    <text x="36" y="12" class="text" font-size="11" font-weight="600">@maxim</text>
+    <text x="80" y="12" class="muted" font-size="10"> · 09:20</text>
+    <!-- Message text -->
+    <text x="36" y="28" class="text" font-size="11">
+      <tspan>&#x0412;&#x0436;&#x0435; &#x0434;&#x0438;&#x0432;&#x043B;&#x044E;&#x0441;&#x044C;. &#x0414;&#x043E; &#x0440;&#x0435;&#x0447;&#x0456;, </tspan><tspan class="highlight">~standup</tspan>
+    </text>
+    <text x="36" y="42" class="text" font-size="11">
+      <tspan>&#x0447;&#x0435;&#x0440;&#x0435;&#x0437; 30 &#x0445;&#x0432;&#x0438;&#x043B;&#x0438;&#x043D;</tspan>
+    </text>
+  </g>
+
+  <!-- Message input area -->
+  <rect x="0" y="548" width="350" height="52" fill="#252526"/>
+  <rect x="12" y="558" width="270" height="32" rx="4" class="input-bg"/>
+  <text x="24" y="578" class="muted" font-size="11">Type a message...</text>
+  <!-- Send button -->
+  <rect x="290" y="558" width="48" height="32" rx="4" class="btn-bg"/>
+  <text x="302" y="578" class="btn-text">Send</text>
+</svg>

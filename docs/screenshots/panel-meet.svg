@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="450" viewBox="0 0 350 450">
+  <defs>
+    <style>
+      .bg { fill: #252526; }
+      .panel-bg { fill: #1e1e1e; }
+      .card-bg { fill: #2d2d2d; rx: 6; ry: 6; }
+      .text { fill: #cccccc; font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; }
+      .muted { fill: #888888; font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; }
+      .alias { fill: #4285f4; font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; }
+      .btn-bg { fill: #4285f4; }
+      .btn-text { fill: #ffffff; font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 600; }
+      .badge-yellow-bg { fill: #b5890044; }
+      .badge-yellow-border { stroke: #b58900; stroke-width: 1; fill: none; }
+      .badge-yellow-text { fill: #e8b830; font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 9px; font-weight: 600; }
+      .badge-gray-bg { fill: #88888830; }
+      .badge-gray-border { stroke: #666666; stroke-width: 1; fill: none; }
+      .badge-gray-text { fill: #999999; font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 9px; font-weight: 600; }
+      .badge-count-bg { fill: #4285f4; }
+      .badge-count-text { fill: #ffffff; font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 9px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- Outer background (VS Code sidebar) -->
+  <rect width="350" height="450" class="bg"/>
+
+  <!-- Panel background -->
+  <rect x="8" y="8" width="334" height="434" rx="4" ry="4" class="panel-bg"/>
+
+  <!-- Header -->
+  <text x="20" y="34" class="text" font-size="14" font-weight="700" letter-spacing="0.3">
+    <tspan style="font-size:15px">&#x1F4F9;</tspan> Google Meet
+  </text>
+
+  <!-- Separator line -->
+  <line x1="20" y1="44" x2="330" y2="44" stroke="#333333" stroke-width="1"/>
+
+  <!-- Subheader row -->
+  <text x="20" y="62" class="muted" font-size="11">Today, June 10 2026</text>
+  <!-- "3 meetings" badge -->
+  <rect x="148" y="52" width="62" height="16" rx="8" ry="8" class="badge-count-bg"/>
+  <text x="179" y="63" class="badge-count-text" text-anchor="middle">3 meetings</text>
+
+  <!-- ==================== CARD 1: Daily Standup ==================== -->
+  <rect x="14" y="74" width="322" height="108" rx="6" ry="6" class="card-bg"/>
+
+  <!-- Title row -->
+  <text x="24" y="94" class="text" font-size="12" font-weight="600">
+    <tspan style="font-size:12px">&#x1F4F9;</tspan> Daily Standup <tspan class="muted" font-size="11">&#x1F501;</tspan>
+  </text>
+
+  <!-- Channel + time -->
+  <text x="24" y="109" class="muted" font-size="10">~standup  &#183;  10:00&#8211;10:15</text>
+
+  <!-- Yellow "in 15 min" badge -->
+  <rect x="160" y="100" width="56" height="15" rx="7" ry="7" class="badge-yellow-bg"/>
+  <rect x="160" y="100" width="56" height="15" rx="7" ry="7" class="badge-yellow-border"/>
+  <text x="188" y="111" class="badge-yellow-text" text-anchor="middle">in 15 min</text>
+
+  <!-- Attendees row 1 -->
+  <text x="24" y="126" font-size="10" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif">
+    <tspan fill="#cccccc">&#x2705; </tspan><tspan class="alias">@anna</tspan>
+    <tspan fill="#cccccc">  &#x2705; </tspan><tspan class="alias">@dmytro</tspan>
+    <tspan fill="#cccccc">  &#x2705; </tspan><tspan class="alias">@maxim</tspan>
+    <tspan fill="#cccccc">  &#x2753; </tspan><tspan class="alias">@olena</tspan>
+  </text>
+
+  <!-- Join button -->
+  <rect x="24" y="135" width="304" height="26" rx="4" ry="4" class="btn-bg"/>
+  <text x="176" y="152" class="btn-text" text-anchor="middle">&#x1F3AC; Join Meeting</text>
+
+  <!-- Subtle bottom highlight -->
+  <rect x="14" y="174" width="322" height="1" rx="0.5" ry="0.5" fill="#333333" opacity="0.5"/>
+
+  <!-- ==================== CARD 2: Design Review ==================== -->
+  <rect x="14" y="190" width="322" height="108" rx="6" ry="6" class="card-bg"/>
+
+  <!-- Title row -->
+  <text x="24" y="210" class="text" font-size="12" font-weight="600">
+    <tspan style="font-size:12px">&#x1F4F9;</tspan> Design Review
+  </text>
+
+  <!-- Channel + time -->
+  <text x="24" y="225" class="muted" font-size="10">~design-review  &#183;  11:00&#8211;11:45</text>
+
+  <!-- Gray "upcoming" badge -->
+  <rect x="192" y="216" width="56" height="15" rx="7" ry="7" class="badge-gray-bg"/>
+  <rect x="192" y="216" width="56" height="15" rx="7" ry="7" class="badge-gray-border"/>
+  <text x="220" y="227" class="badge-gray-text" text-anchor="middle">upcoming</text>
+
+  <!-- Attendees -->
+  <text x="24" y="242" font-size="10" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif">
+    <tspan fill="#cccccc">&#x2705; </tspan><tspan class="alias">@olena</tspan>
+    <tspan fill="#cccccc">  &#x2705; </tspan><tspan class="alias">@iryna</tspan>
+    <tspan fill="#cccccc">  &#x274C; </tspan><tspan class="alias">@anna</tspan>
+  </text>
+
+  <!-- Join button -->
+  <rect x="24" y="251" width="304" height="26" rx="4" ry="4" class="btn-bg"/>
+  <text x="176" y="268" class="btn-text" text-anchor="middle">&#x1F3AC; Join Meeting</text>
+
+  <!-- Subtle bottom highlight -->
+  <rect x="14" y="290" width="322" height="1" rx="0.5" ry="0.5" fill="#333333" opacity="0.5"/>
+
+  <!-- ==================== CARD 3: Sprint Planning ==================== -->
+  <rect x="14" y="306" width="322" height="124" rx="6" ry="6" class="card-bg"/>
+
+  <!-- Title row -->
+  <text x="24" y="326" class="text" font-size="12" font-weight="600">
+    <tspan style="font-size:12px">&#x1F4F9;</tspan> Sprint Planning <tspan class="muted" font-size="11">&#x1F501;</tspan>
+  </text>
+
+  <!-- Channel + time -->
+  <text x="24" y="341" class="muted" font-size="10">~sprint-planning  &#183;  14:00&#8211;15:00</text>
+
+  <!-- Gray "upcoming" badge -->
+  <rect x="204" y="332" width="56" height="15" rx="7" ry="7" class="badge-gray-bg"/>
+  <rect x="204" y="332" width="56" height="15" rx="7" ry="7" class="badge-gray-border"/>
+  <text x="232" y="343" class="badge-gray-text" text-anchor="middle">upcoming</text>
+
+  <!-- Attendees row 1 -->
+  <text x="24" y="358" font-size="10" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif">
+    <tspan fill="#cccccc">&#x2705; </tspan><tspan class="alias">@anna</tspan>
+    <tspan fill="#cccccc">  &#x2705; </tspan><tspan class="alias">@dmytro</tspan>
+    <tspan fill="#cccccc">  &#x2705; </tspan><tspan class="alias">@maxim</tspan>
+    <tspan fill="#cccccc">  &#x2705; </tspan><tspan class="alias">@olena</tspan>
+  </text>
+  <!-- Attendees row 2 -->
+  <text x="24" y="372" font-size="10" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif">
+    <tspan fill="#cccccc">&#x2705; </tspan><tspan class="alias">@iryna</tspan>
+    <tspan fill="#cccccc">  &#x2705; </tspan><tspan class="alias">@sergiy</tspan>
+  </text>
+
+  <!-- Join button -->
+  <rect x="24" y="383" width="304" height="26" rx="4" ry="4" class="btn-bg"/>
+  <text x="176" y="400" class="btn-text" text-anchor="middle">&#x1F3AC; Join Meeting</text>
+
+</svg>

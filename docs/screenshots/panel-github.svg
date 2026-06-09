@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="550" viewBox="0 0 700 550">
+  <defs>
+    <style>
+      .bg { fill: #252526; }
+      .panel-bg { fill: #1e1e1e; }
+      .text { fill: #cccccc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+      .text-muted { fill: #888888; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+      .text-bold { fill: #cccccc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 600; }
+      .text-blue { fill: #4285f4; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+      .section-header { fill: #888888; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.5px; }
+      .card-bg { fill: #2d2d2d; }
+      .search-bg { fill: #3c3c3c; }
+      .border-blue { stroke: #4285f4; stroke-width: 1; fill: none; }
+      .badge-public { fill: #2ea04366; }
+      .badge-private { fill: #d29922aa; }
+      .badge-admin { fill: #d29922; }
+      .badge-member { fill: #555555; }
+      .avatar-blue { fill: #4285f4; }
+      .avatar-green { fill: #2ea043; }
+      .avatar-purple { fill: #8b5cf6; }
+      .avatar-orange { fill: #d97706; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="550" class="bg"/>
+
+  <!-- Left Panel -->
+  <rect x="4" y="4" width="344" height="542" rx="4" class="panel-bg"/>
+
+  <!-- Left Panel Header -->
+  <text x="18" y="26" class="text" font-size="12" font-weight="600">&#x1F3E0; GitHub Organization</text>
+
+  <!-- Org Card -->
+  <rect x="12" y="36" width="328" height="88" rx="4" class="border-blue"/>
+  <rect x="12" y="36" width="328" height="88" rx="4" fill="#1e1e1e"/>
+  <rect x="12" y="36" width="328" height="88" rx="4" class="border-blue"/>
+
+  <!-- Org Avatar -->
+  <circle cx="40" cy="68" r="18" class="avatar-blue"/>
+  <text x="40" y="73" text-anchor="middle" fill="white" font-family="sans-serif" font-size="12" font-weight="600">SL</text>
+
+  <!-- Org Info -->
+  <text x="66" y="62" class="text-bold" font-size="13">SwagaLabs</text>
+  <text x="66" y="76" class="text-muted" font-size="10">#swagalabs · swagalabs</text>
+  <text x="66" y="90" class="text-muted" font-size="10">Building collaborative development tools</text>
+
+  <!-- Org Stats -->
+  <text x="66" y="112" class="text-muted" font-size="10">&#x1F465; 6 members · &#x1F527; 4 teams</text>
+
+  <!-- TEAMS Section -->
+  <text x="14" y="146" class="section-header">TEAMS</text>
+
+  <!-- Team: Backend -->
+  <rect x="12" y="152" width="328" height="38" rx="3" class="card-bg"/>
+  <text x="20" y="168" class="text" font-size="11" font-weight="500">Backend</text>
+  <text x="20" y="182" class="text-muted" font-size="9">#team-backend · API &amp; services</text>
+  <rect x="308" y="160" width="22" height="16" rx="8" fill="#4285f4"/>
+  <text x="319" y="172" text-anchor="middle" fill="white" font-family="sans-serif" font-size="9" font-weight="600">3</text>
+
+  <!-- Team: Frontend -->
+  <rect x="12" y="194" width="328" height="38" rx="3" class="card-bg"/>
+  <text x="20" y="210" class="text" font-size="11" font-weight="500">Frontend</text>
+  <text x="20" y="224" class="text-muted" font-size="9">#team-frontend · UI &amp; UX</text>
+  <rect x="308" y="202" width="22" height="16" rx="8" fill="#4285f4"/>
+  <text x="319" y="214" text-anchor="middle" fill="white" font-family="sans-serif" font-size="9" font-weight="600">3</text>
+
+  <!-- Team: DevOps -->
+  <rect x="12" y="236" width="328" height="38" rx="3" class="card-bg"/>
+  <text x="20" y="252" class="text" font-size="11" font-weight="500">DevOps</text>
+  <text x="20" y="266" class="text-muted" font-size="9">#team-devops · Infrastructure</text>
+  <rect x="308" y="244" width="22" height="16" rx="8" fill="#4285f4"/>
+  <text x="319" y="256" text-anchor="middle" fill="white" font-family="sans-serif" font-size="9" font-weight="600">2</text>
+
+  <!-- MEMBERS Section -->
+  <text x="14" y="296" class="section-header">MEMBERS</text>
+
+  <!-- Search Box -->
+  <rect x="12" y="302" width="328" height="24" rx="3" class="search-bg"/>
+  <text x="24" y="318" class="text-muted" font-size="10">&#x1F50D; Search members...</text>
+
+  <!-- Member: Anna -->
+  <rect x="12" y="332" width="328" height="48" rx="3" class="card-bg"/>
+  <circle cx="34" cy="356" r="14" class="avatar-green"/>
+  <text x="34" y="360" text-anchor="middle" fill="white" font-family="sans-serif" font-size="9" font-weight="600">AK</text>
+  <text x="56" y="349" class="text-bold" font-size="11">Анна Коваленко</text>
+  <text x="56" y="363" class="text-muted" font-size="9">@anna · anna.k</text>
+  <text x="56" y="375" class="text-blue" font-size="9">@anna</text>
+  <rect x="290" y="345" width="40" height="14" rx="7" class="badge-admin"/>
+  <text x="310" y="355" text-anchor="middle" fill="#1e1e1e" font-family="sans-serif" font-size="8" font-weight="600">admin</text>
+
+  <!-- Member: Dmytro -->
+  <rect x="12" y="384" width="328" height="48" rx="3" class="card-bg"/>
+  <circle cx="34" cy="408" r="14" class="avatar-purple"/>
+  <text x="34" y="412" text-anchor="middle" fill="white" font-family="sans-serif" font-size="9" font-weight="600">DW</text>
+  <text x="56" y="401" class="text-bold" font-size="11">Дмитро Шевченко</text>
+  <text x="56" y="415" class="text-muted" font-size="9">@dmytro · dmytro.s</text>
+  <text x="56" y="427" class="text-blue" font-size="9">@dmytro</text>
+  <rect x="282" y="397" width="48" height="14" rx="7" class="badge-member"/>
+  <text x="306" y="407" text-anchor="middle" fill="#cccccc" font-family="sans-serif" font-size="8" font-weight="500">member</text>
+
+  <!-- Member: Olena -->
+  <rect x="12" y="436" width="328" height="48" rx="3" class="card-bg"/>
+  <circle cx="34" cy="460" r="14" class="avatar-orange"/>
+  <text x="34" y="464" text-anchor="middle" fill="white" font-family="sans-serif" font-size="9" font-weight="600">OP</text>
+  <text x="56" y="453" class="text-bold" font-size="11">Олена Петренко</text>
+  <text x="56" y="467" class="text-muted" font-size="9">@olena · olena.p</text>
+  <text x="56" y="479" class="text-blue" font-size="9">@olena</text>
+  <rect x="282" y="449" width="48" height="14" rx="7" class="badge-member"/>
+  <text x="306" y="459" text-anchor="middle" fill="#cccccc" font-family="sans-serif" font-size="8" font-weight="500">member</text>
+
+  <!-- Divider -->
+  <rect x="350" y="4" width="1" height="542" fill="#3c3c3c"/>
+
+  <!-- Right Panel -->
+  <rect x="352" y="4" width="344" height="542" rx="4" class="panel-bg"/>
+
+  <!-- Right Panel Header -->
+  <text x="366" y="26" class="text" font-size="12" font-weight="600">&#x1F4E6; GitHub Repos</text>
+
+  <!-- Stats Badges -->
+  <rect x="362" y="34" width="52" height="16" rx="8" fill="#2d2d2d"/>
+  <text x="388" y="45" text-anchor="middle" class="text" font-size="9">5 repos</text>
+  <text x="422" y="45" class="text-muted" font-size="9">&#x2B50; 237 stars</text>
+  <text x="496" y="45" class="text-muted" font-size="9">&#x1F4C4; 38 issues</text>
+
+  <!-- Search Box -->
+  <rect x="362" y="56" width="326" height="24" rx="3" class="search-bg"/>
+  <text x="374" y="72" class="text-muted" font-size="10">&#x1F50D; Search repos...</text>
+
+  <!-- Repo: kasper -->
+  <rect x="362" y="86" width="326" height="86" rx="4" class="card-bg"/>
+  <text x="374" y="104" class="text-blue" font-size="12" font-weight="600">kasper</text>
+  <rect x="418" y="93" width="42" height="14" rx="7" class="badge-public"/>
+  <text x="439" y="103" text-anchor="middle" fill="#2ea043" font-family="sans-serif" font-size="8" font-weight="500">public</text>
+  <text x="374" y="120" class="text" font-size="10">VS Code fork with collaborative integrations</text>
+  <text x="374" y="136" class="text-muted" font-size="9">&#x1F535; TypeScript  &#x2B50;128  &#x1F517;15  &#x1F4C4;23 · updated 2h ago</text>
+  <text x="374" y="152" font-size="9">
+    <tspan class="text-blue">$kasper</tspan>
+    <tspan class="text-muted"> · swagalabs/kasper</tspan>
+  </text>
+
+  <!-- Repo: kasper-api -->
+  <rect x="362" y="178" width="326" height="86" rx="4" class="card-bg"/>
+  <text x="374" y="196" class="text-blue" font-size="12" font-weight="600">kasper-api</text>
+  <rect x="445" y="185" width="42" height="14" rx="7" class="badge-public"/>
+  <text x="466" y="195" text-anchor="middle" fill="#2ea043" font-family="sans-serif" font-size="8" font-weight="500">public</text>
+  <text x="374" y="212" class="text" font-size="10">Backend API for Kasper services</text>
+  <text x="374" y="228" class="text-muted" font-size="9">&#x1F535; Go  &#x2B50;45  &#x1F517;8  &#x1F4C4;7 · updated 45m ago</text>
+  <text x="374" y="244" class="text-blue" font-size="9">$kasper-api</text>
+
+  <!-- Repo: kasper-infra -->
+  <rect x="362" y="270" width="326" height="86" rx="4" class="card-bg"/>
+  <text x="374" y="288" class="text-blue" font-size="12" font-weight="600">kasper-infra</text>
+  <rect x="457" y="277" width="44" height="14" rx="7" class="badge-private"/>
+  <text x="479" y="287" text-anchor="middle" fill="#d29922" font-family="sans-serif" font-size="8" font-weight="500">private</text>
+  <text x="374" y="304" class="text" font-size="10">Terraform &amp; K8s configs</text>
+  <text x="374" y="320" class="text-muted" font-size="9">&#x1F7E3; HCL  &#x2B50;12  &#x1F517;2  &#x1F4C4;1 · updated 30m ago</text>
+  <text x="374" y="336" class="text-blue" font-size="9">$kasper-infra</text>
+</svg>
