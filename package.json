@@ -1,0 +1,140 @@
+{
+  "name": "kasper",
+  "displayName": "Kasper — Collaborative Development Hub",
+  "description": "VS Code fork integrating Google Chat, Meet, Calendar, and GitHub Organization tools into a unified collaborative workspace",
+  "version": "0.1.0",
+  "publisher": "swagalabs",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "kasper",
+          "title": "Kasper",
+          "icon": "media/icons/kasper.svg"
+        }
+      ]
+    },
+    "views": {
+      "kasper": [
+        {
+          "type": "webview",
+          "id": "kasper.googleChat",
+          "name": "Google Chat"
+        },
+        {
+          "type": "webview",
+          "id": "kasper.googleMeet",
+          "name": "Google Meet"
+        },
+        {
+          "type": "webview",
+          "id": "kasper.googleCalendar",
+          "name": "Google Calendar"
+        },
+        {
+          "type": "webview",
+          "id": "kasper.githubOrg",
+          "name": "GitHub Organization"
+        },
+        {
+          "type": "webview",
+          "id": "kasper.githubRepos",
+          "name": "GitHub Repos"
+        },
+        {
+          "type": "webview",
+          "id": "kasper.githubProjects",
+          "name": "GitHub Projects"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "kasper.openChat",
+        "title": "Kasper: Open Google Chat"
+      },
+      {
+        "command": "kasper.openMeet",
+        "title": "Kasper: Open Google Meet"
+      },
+      {
+        "command": "kasper.openCalendar",
+        "title": "Kasper: Open Google Calendar"
+      },
+      {
+        "command": "kasper.openGithubOrg",
+        "title": "Kasper: Open GitHub Organization"
+      },
+      {
+        "command": "kasper.openGithubRepos",
+        "title": "Kasper: Open GitHub Repos"
+      },
+      {
+        "command": "kasper.openGithubProjects",
+        "title": "Kasper: Open GitHub Projects"
+      },
+      {
+        "command": "kasper.navigate",
+        "title": "Kasper: Navigate to..."
+      },
+      {
+        "command": "kasper.resolveAlias",
+        "title": "Kasper: Resolve Alias"
+      },
+      {
+        "command": "kasper.authenticate",
+        "title": "Kasper: Authenticate"
+      }
+    ],
+    "configuration": {
+      "title": "Kasper",
+      "properties": {
+        "kasper.github.organization": {
+          "type": "string",
+          "default": "",
+          "description": "GitHub organization name"
+        },
+        "kasper.github.token": {
+          "type": "string",
+          "default": "",
+          "description": "GitHub personal access token"
+        },
+        "kasper.google.clientId": {
+          "type": "string",
+          "default": "",
+          "description": "Google OAuth client ID"
+        },
+        "kasper.google.clientSecret": {
+          "type": "string",
+          "default": "",
+          "description": "Google OAuth client secret"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0",
+    "eslint": "^8.50.0"
+  },
+  "dependencies": {
+    "@octokit/rest": "^20.0.0"
+  }
+}
