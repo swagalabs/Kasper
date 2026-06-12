@@ -1,0 +1,11 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Diamond outline -->
+  <polygon points="12,1 23,12 12,23 1,12"
+           fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- K vertical bar -->
+  <rect x="7" y="7" width="2" height="10" rx="0.5" fill="currentColor"/>
+  <!-- K upper arm -->
+  <polygon points="9,12 9,7 11,7 15.5,12" fill="currentColor"/>
+  <!-- K lower arm -->
+  <polygon points="9,12 15.5,17 11,17 9,12" fill="currentColor"/>
+</svg>

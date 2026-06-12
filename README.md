@@ -4,8 +4,6 @@
 
 No more tab-switching. Write code, check your calendar, reply in chat, join a meeting, review a project board — all without leaving your editor.
 
-![Architecture](docs/screenshots/architecture.svg)
-
 ---
 
 ## Table of Contents
@@ -158,8 +156,6 @@ Each panel is a **webview** — a mini web app rendered inside VS Code that matc
 
 ### Google Chat
 
-![Google Chat Panel](docs/screenshots/panel-chat.svg)
-
 The Chat panel shows your Google Chat spaces and messages.
 
 **Layout:**
@@ -193,8 +189,6 @@ The Chat panel shows your Google Chat spaces and messages.
 
 ### Google Meet
 
-![Google Meet Panel](docs/screenshots/panel-meet.svg)
-
 The Meet panel lists today's meetings with real-time status.
 
 **Layout:**
@@ -221,8 +215,6 @@ The Meet panel lists today's meetings with real-time status.
 ---
 
 ### Google Calendar
-
-![Google Calendar Panel](docs/screenshots/panel-calendar.svg)
 
 The Calendar panel shows a timeline of today's events plus upcoming dates.
 
@@ -251,8 +243,6 @@ The Calendar panel shows a timeline of today's events plus upcoming dates.
 ---
 
 ### GitHub Organization
-
-![GitHub Panels](docs/screenshots/panel-github.svg)
 
 The Organization panel shows your GitHub org at a glance.
 
@@ -285,8 +275,6 @@ The Repos panel lists all organization repositories.
 
 ### GitHub Projects
 
-![GitHub Projects Panel](docs/screenshots/panel-projects.svg)
-
 The Projects panel renders a **kanban board** for each GitHub Project.
 
 **Layout:**
@@ -312,8 +300,6 @@ The Projects panel renders a **kanban board** for each GitHub Project.
 ---
 
 ## Alias System
-
-![Alias System](docs/screenshots/alias-system.svg)
 
 The alias system is the **core concept** of Kasper. Instead of passing raw URLs between modules, everything uses human-readable aliases.
 

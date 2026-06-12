@@ -4,6 +4,7 @@
   "description": "VS Code fork integrating Google Chat, Meet, Calendar, and GitHub Organization tools into a unified collaborative workspace",
   "version": "0.1.0",
   "publisher": "swagalabs",
+  "icon": "media/icons/kasper.png",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -20,7 +21,7 @@
         {
           "id": "kasper",
           "title": "Kasper",
-          "icon": "media/icons/kasper.svg"
+          "icon": "media/icons/kasper-activity.svg"
         }
       ]
     },
